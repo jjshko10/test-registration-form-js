@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+label {
+  font-size: 14px;
+  margin: 0 0 5px 5px;
+  color: #828282;
+}
+
+input {
+  min-width: 500px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+  border: none;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #E0E0E0 inset;
+}
+
+div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px auto 0;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    min-width: initial;
+  }
+
+  button {
+    width: 100%;
+  }
+}
