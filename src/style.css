@@ -35,6 +35,13 @@ form {
   margin-top: 40px;
 }
 
+small {
+  color: #FF6C2D;
+  font-size: 12px;
+  margin: 0 0 10px 5px;
+  max-width: 500px;
+}
+
 label {
   font-size: 14px;
   margin: 0 0 5px 5px;
@@ -58,10 +65,26 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #E0E0E0 inset;
 }
 
+.error {
+  border: 2px solid #FF6C2D;
+}
+
 div {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 33px;
+  right: 10px;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 button {
