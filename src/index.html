@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Registration form</title>
+    <script src="./form-submit.js" async></script>
+  </head>
+  <body>
+    <section>
+      <h1>Registration form</h1>
+      <form id="form">
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username">
+        <small id="username-error"></small>
+
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname">
+        <small id="surname-error"></small>
+
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="date">
+        <small id="date-error"></small>
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email">
+        <small id="email-error"></small>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+          <img src="assets/eye-close.svg" id="eye-icon-password" />
+          <small id="password-error"></small>
+        </div>
+
+        <div>
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirm-password" id="confirm-password">
+          <img src="assets/eye-close.svg" id="eye-icon-confirm-password" />
+          <small id="confirm-password-error"></small>
+        </div>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </body>
+</html>
